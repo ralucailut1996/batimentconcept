@@ -1,0 +1,15 @@
+@import "../../styles.scss";
+
+.home {
+    height: auto;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $c-applicationThemeColor;
+
+    .imgcenter {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

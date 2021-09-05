@@ -1,0 +1,166 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Batiment <span
+          class="w3-hide-small">Concept </span>78</span>
+    </div>
+  </div>
+
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">Despre noi</h3>
+    <p class="w3-center"><em>Iubim frumosul </em></p>
+    Suntem o echipă tânără și dinamică care este pasionată de calitate mai presus decât orice. Ne dorim ca atunci când clienții văd lucrarea pe care am realizat-o să fie fericiți,
+      și să se bucure că au ales să colaboreze cu noi.Batiment Concept vine cu o vastă experiență,cu oameni pregătiți la un  nivel superior de profesionalism pentru a vă oferi siguranță, seriozitate și garanția celei mai bune colaborări cu o companie de construcții.
+      Noi suntem o companie pregătită să vă ofere servicii de cea mai înaltă calitate în execuţia lucrărilor de construcţii civile, amenajări interioare şi exterioare.
+      De ce să ne alegi pe noi?<br>
+      <ul>
+        <li>Profesionalisim</li>
+        <li>Transparență</li>
+        <li>Pasiune</li>
+        <li>Adaptabilitate</li>
+      </ul>
+
+
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <p><b><i class="fa fa-user w3-margin-right"></i>{{ownerName}}</b></p><br>
+        <img src="assets/person.PNG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+          width="500" height="333">
+      </div>
+
+      <div class="w3-col m6 w3-hide-small w3-padding-large">
+        Domeniul pe care îl acoperim este unul vast și include următoarele:
+          <ul>
+            <li>Placări rigips</li>
+            <li>Design interior</li>
+            <li>Zugrăvire</li>
+            <li>Parchet</li>
+            <li>Montare uși</li>
+            <li>Gletuit</li>
+            <li>Consultanță</li>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">Portofoliu</h3>
+    <p class="w3-center"><em>Aici sunt prezentate câteva dintre ultimele noastre lucrări<br> Click pe imagini pentru a le mării</em></p><br>
+
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3">
+        <img src="assets/1.jpeg" style="width:100%" (click)="ImgClick($event)" class="w3-hover-opacity"
+          alt="Living">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="assets/2.jpeg" style="width:100%" (click)="ImgClick($event)" class="w3-hover-opacity"
+          alt="Living + hol">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="assets/3.jpeg" style="width:100%" (click)="ImgClick($event)" class="w3-hover-opacity"
+          alt="Bucatărie">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="assets/4.jpeg" style="width:100%" (click)="ImgClick($event)" class="w3-hover-opacity"
+          alt="Baie">
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <img src="assets/5.jpeg" style="width:100%" (click)="ImgClick($event)" class="w3-hover-opacity" alt="Baie">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="assets/6.jpeg" style="width:100%" (click)="ImgClick($event)" class="w3-hover-opacity"
+          alt="Baie">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="assets/7.jpeg" style="width:100%" (click)="ImgClick($event)" class="w3-hover-opacity"
+          alt="Schiță baie">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="assets/8.jpeg" style="width:100%" (click)="ImgClick($event)" class="w3-hover-opacity" alt="Living">
+      </div>
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+        class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+      <span class="w3-hide-small">CONTACT</span>
+    </div>
+  </div>
+
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">Sediul Nostru</h3>
+    <p class="w3-center"><em>Ne-am bucura să auzim feeback-ul tău!</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+
+      <div class="w3-col m4 w3-container">
+        <img src="assets/location.png" class="w3-image w3-round" style="width:100%">
+      </div>
+
+      <div class="w3-col m8 w3-panel">
+
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> {{address}}<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: {{phoneNumber}}<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: {{emailAddress}}<br>
+        </div>
+
+        <p>Hai să ne vedem la o ceașcă de <i class="fa fa-coffee"></i>,sau lasă-ne un mesaj:</p>
+
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+
+            <div class="w3-half">
+              <input mdbInput name="name" formControlName="contactFormName" id="defaultContactFormName"
+                class="w3-input w3-border" type="text" placeholder="Name">
+            </div>
+
+            <div class="w3-half">
+              <input mdbInput name="email" type="email" formControlName="contactFormEmail" id="defaultContactFormEmail"
+                class="w3-input w3-border" placeholder="Email">
+            </div>
+          </div>
+          <textarea mdbInput name="message" formControlName="contactFormMessage" class="w3-input w3-border" type="text"
+          placeholder="Message"></textarea>
+          <button [disabled]="disabledSubmitButton" outline="true" block="true"
+            class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

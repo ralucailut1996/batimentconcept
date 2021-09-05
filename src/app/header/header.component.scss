@@ -1,0 +1,19 @@
+@import "../../styles.scss";
+
+.navbar {
+    background-color: $c-applicationThemeColor;
+    background: #708090;
+    a {
+        color: $c-white;
+        font-size: 1.2em;
+	    font-weight: 600;
+	    line-height: 38px;
+	    font-family: $font-familyLucida;
+        font-weight: lighter
+    }
+}
+
+.header-bottom-hr {
+    margin: 0px !important;
+
+}

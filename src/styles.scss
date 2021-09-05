@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+$c-OxfordBlue: 708090(0,33,71,1); //#002147
+$c-white: rgba(255,255,255,1); //#FFFFFF
+$font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+$batimentImage : url('C:/Users/raluca.ilut/Desktop/batimentconcept78/BatiementConcept78Presentation/src/assets/batiment.jpg');
+$portofolioImage : url('C:/Users/raluca.ilut/Desktop/batimentconcept78/BatiementConcept78Presentation/src/assets/portofolio.jpg');
+$contactImage : url('C:/Users/raluca.ilut/Desktop/batimentconcept78/BatiementConcept78Presentation/src/assets/contact.jpg');
+
+$c-applicationThemeColor: $c-OxfordBlue;
+$c-applicationFormsColor: $c-white;
+$c-titleWordsColor: $c-white;
+$font-familyLucida : $font-family;
